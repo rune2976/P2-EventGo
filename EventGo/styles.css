@@ -1,15 +1,40 @@
 /* Basis Styling til hjemmesiden */
 
 
+
 header {
-  background-color: #10784e;
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-style: oblique;
-  text-align: center;
-  border-radius: 30px;
-  }
-  
+  background: #10784e; /* Eksempel på baggrundsfarve */
+  padding: 10px 20px; /* Padding rundt om headeren */
+  width: 100%;
+}
+
+nav ul {
+  list-style: none; /* Fjerner punkttegn */
+  padding: 0; /* Nulstiller padding */
+  margin: 0; /* Nulstiller margin */
+  display: flex; /* Anvender flexbox for at arrangere elementerne horisontalt */
+  justify-content: space-between; /* Fordeler elementerne jævnt */
+  padding-left: 350px;
+}
+
+nav li {
+  margin: 0 10px; /* Tilføjer en lille margin mellem hver listeelement */
+}
+
+nav a {
+  text-decoration: none; /* Fjerner understregning af links */
+  color: #333; /* Farve på tekst */
+  font-weight: bold; /* Gør teksten fed */
+  background-color: #6f7a3f; /* Baggrundsfarve for hver linkkasse */
+  padding: 10px 15px; /* Tilføjer padding for at gøre linket større og mere knaplignende */
+  border-radius: 5px; /* Giver kasserne afrundede hjørner */
+  transition: background-color 0.3s; /* Gør farveskift ved hover glattere */
+}
+
+nav a:hover {
+  color: #0056b3; /* Farve på tekst ved hover */
+}
+
 footer {
   background-color: #10784e;
   color: white;
@@ -17,7 +42,7 @@ footer {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: oblique;
   padding: 30px;
-  border-radius: 30px;
+  margin-top: auto; /* Automatisk margin øverst skubber footer ned */
   }
   
 *{
@@ -28,9 +53,10 @@ footer {
 
 body{
   background-image: linear-gradient(rgba(52, 216, 151, 0.8),rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
-  display: grid;
-  place-items: center;
   height: 100vh;
+  display: flex; /* Anvender flexbox */
+  flex-direction: column; /* Orienterer flex-items i en vertikal kolonne */
+  justify-content: space-between; /* Fordeler indholdet med mellemrum */
 }
 
 .container{
