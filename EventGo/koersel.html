@@ -13,19 +13,31 @@
     <h1>EventGo.DK</h1>
     <nav>
       <ul>
-        <a href="homepage.html">Hjem</a>
-        <a href="koersel.html">Kørsel</a>
-        <a href="profil.html">Profil</a>
-        <a href="omos.html">Om Os</a>
-        <a href="login.html">Log Ud</a>
+        <li><a href="homepage.html">Hjem</a></li>
+        <li><a href="koersel.html">Kørsel</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="omos.html">Om Os</a></li>
+        <li><a href="login.html">Log Ud</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <p>kørsel</p>
-    <p>kørsels info?</p>
-    <p>info om ruter, og info om chauffører der kører til div. events.</p>
+    <div class="container">
+      <form action="kørselsplaner.html" method="GET">
+          <label for="from">Jeg kører fra:</label>
+          <input type="text" id="from" name="from" placeholder="Indtast startsted">
+
+          <label for="to">til:</label>
+          <select id="to" name="to">
+              <option value="copenhagen">Halkær Kro</option>
+              <!-- Flere destinationer kan tilføjes her -->
+          </select>
+
+          <button type="submit" class="button">Kør</button>
+
+      </form>
+  </div>
   </main>
 
   <footer>
