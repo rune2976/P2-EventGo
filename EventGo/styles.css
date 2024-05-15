@@ -213,4 +213,97 @@ input, select {
   color: white;
   font-size: 0.8em;
 }
+
+.name-interesser, .content-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-area {
+  flex-grow: 1;
+}
+
+p {
+  margin-right: 20px; /* Tilføjer margin til højre for at give plads til knappen */
+}
+
+.signup-button {
+  padding: 20px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration-thickness: 12;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
 /* Her stopper det med profiler */
+
+/* Her begynder css for Delegenstande*/
+.Delegenstande {
+  background-image: linear-gradient(rgba(52, 216, 151, 0.8),rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+.containerDelegenstande {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.festival-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.festival-button:hover {
+  background-color: #0056b3;
+}
+
+/* Her slutter css for delegenstande */
+
+/* Her starter css for opret profil */
+
+.signup-form {
+  display: flex;
+  align-items: center;
+  padding: 10px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;  /* Ramme om hele profilen */
+  border-radius: 8px;
+  background-image: url(assets/vejbillede2.jpg);  /* Sætter et baggrundsbillede */
+  background-size: cover;  /* Sørger for at billedet dækker hele kassen */
+  background-position: center;  /* Centrerer billedet i kassen */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  width: 60%;  /* Tilpasset bredde */
+}
+
+/* Her slutter css for opret profil */
