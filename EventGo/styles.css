@@ -214,3 +214,23 @@ input, select {
   font-size: 0.8em;
 }
 /* Her stopper det med profiler */
+
+
+/* Her begynder CSS med Opret Profil */
+
+.signupform  {
+  display: flex;
+  align-items: center;
+  padding: 20px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;  /* Ramme om hele profilen */
+  border-radius: 8px;
+  background-image: url(assets/vejbillede2.jpg);  /* Sætter et baggrundsbillede */
+  background-size: cover;  /* Sørger for at billedet dækker hele kassen */
+  background-position: center;  /* Centrerer billedet i kassen */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  width: 60%;  /* Tilpasset bredde */
+ 
+}
+
+
