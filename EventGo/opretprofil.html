@@ -21,14 +21,14 @@
       </ul>
     </nav>
   </header>
-  
+
 <h1>Opret Profil</h1>
-<div class="signupform"> 
+<div class="signup-form"><div class="signupform"> 
 
 
-  <form id="signup-form">
-    <label for="profile-picture">Vælg Profilbillede:</label>
-    <input type="file" id="profile-picture" accept="image/*"><br><br>
+    <form id="signup-form">
+      <label for="profile-picture">Vælg Profilbillede:</label>
+      <input type="file" id="profile-picture" accept="image/*"><br><br>
 
     <label for="first-name">Fornavn:</label>
     <input type="text" id="first-name" required><br><br>
@@ -62,8 +62,6 @@
   </form>
 </div>
 
-
-
 <script>
   document.getElementById('signup-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -85,7 +83,6 @@
       return;
     }
 
-
     // Her kan du udføre yderligere handlinger som f.eks. sende data til en server eller gemme data lokalt
 
     // Vis en besked om at profilen er oprettet
@@ -95,6 +92,9 @@
     document.getElementById('signup-form').reset();
   });
 </script>
+
+</body>
+</html>
 
 <footer>
   <p>&copy; 2024 EventGo.DK</p>
