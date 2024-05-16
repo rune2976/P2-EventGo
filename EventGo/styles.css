@@ -1,7 +1,7 @@
 /* Basis Styling til hjemmesiden */
 
 header {
-  background: #10784e; /* Eksempel på baggrundsfarve */
+  background: #0f7049; /* Eksempel på baggrundsfarve */
   font-family: sans-serif;
   padding: 0px 10px; /* Padding rundt om headeren */
   width: 100%;
@@ -43,7 +43,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #10784e;
+  background-color: #0f7049;
   color: white;
   text-align: center;
   font-family: sans-serif;
@@ -115,7 +115,7 @@ label{
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #0f7049;
 }
 
 
@@ -129,7 +129,7 @@ input, select {
 
 .login-btn{
   border: none;
-  background-color: green;
+  background-color:#4CAF50;
   color: #fff;
   font-size: 20px;
   padding: 10px;
