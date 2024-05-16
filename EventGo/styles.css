@@ -12,7 +12,7 @@ nav ul {
   padding: 0; /* Nulstiller padding */
   margin: 0; /* Nulstiller margin */
   display: flex; /* Anvender flexbox for at arrangere elementerne horisontalt */
-  justify-content: space-between; /* Fordeler elementerne jævnt */
+  justify-content: right; /* Fordeler elementerne jævnt */
   padding-left: 350px;
 }
 
@@ -22,9 +22,9 @@ nav li {
 
 nav a {
   text-decoration: none; /* Fjerner understregning af links */
-  color: #333; /* Farve på tekst */
+  color: #f8f3f3; /* Farve på tekst */
   font-weight: bold; /* Gør teksten fed */
-  background-color: #6f7a3f; /* Baggrundsfarve for hver linkkasse */
+  background-color: #14631f; /* Baggrundsfarve for hver linkkasse */
   padding: 10px 15px; /* Tilføjer padding for at gøre linket større og mere knaplignende */
   border-radius: 5px; /* Giver kasserne afrundede hjørner */
   transition: background-color 0.3s; /* Gør farveskift ved hover glattere */
@@ -40,7 +40,7 @@ footer {
   text-align: center;
   font-family: sans-serif;
   font-style: oblique;
-  padding: 30px;
+  padding: 20px;
   margin-top: auto; /* Automatisk margin øverst skubber footer ned */
   }
   
@@ -53,11 +53,13 @@ footer {
 body{
   background-image: url(assets/HALKR_KRO_1.png) ;
   background-size: cover; 
+  background-position: center bottom; /* Center the background image */
   height: 100vh;
   display: flex; /* Anvender flexbox */
   flex-direction: column; /* Orienterer flex-items i en vertikal kolonne */
   justify-content: space-between; /* Fordeler indholdet med mellemrum */
   font-family: sans-serif;
+  overflow: scroll;
 }
 
 
@@ -142,6 +144,7 @@ input, select {
 
 
 /* UNDER er alt omkring profiler under kørselsplaner */
+
 .profile-container {
   display: flex;
   flex-direction: column;
@@ -154,9 +157,9 @@ input, select {
   display: flex;
   align-items: center;
   padding: 20px;  /* Tilføjer padding inden i den store kasse */
-  border: 2px solid #ccc;  /* Ramme om hele profilen */
+  border: 2px solid #ffffff;  /* Ramme om hele profilen */
   border-radius: 8px;
-  background-color: #f4f4;
+  background-color: #f4f4f4;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
   width: 60%;  /* Tilpasset bredde */
@@ -246,11 +249,12 @@ p {
 /* Her begynder css for Delegenstande*/
 .Delegenstande {
   background-image: url(assets/HALKR_KRO_1.png) ;
-  background-size: cover; 
+  background-size: 100% auto; 
+  background-position: center; /* Center the background image */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -402,7 +406,6 @@ overflow: auto; /* Sørger for at indholdet kan være på siden og ellers kan ma
 }
 
 
-
 .opretprofil-btn{
   border: none;
   background-color: green;
@@ -540,4 +543,30 @@ text-align: center;
 .chaufførtekst{
   display: flex;
   text-align: start;
+}
+
+/* Her slutter CSS med profil */
+
+/* Her begynder CSS med HOMEPAGE */
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
 }
