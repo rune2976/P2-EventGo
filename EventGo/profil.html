@@ -24,49 +24,65 @@
 
   
   <main class="Profilmain">
-    <div class="profil-info">
-      <img src="assets/profilbillede.png" alt="Profilbillede">
-      <h2>Brugernavn</h2>
-      <p>Beskrivelse: En kort tekst om brugeren.</p>
-      <p>Fødselsdato: 01/01/2000</p>
-      <p>Køn: Kvinde</p>
-      <!-- Tilføj flere personlige oplysninger efter behov -->
+    <div class="profil-billede-tekst">
+      <div class="profil-billede">
+        <img src="assets/profilbillede.png" alt="Profilbillede">
+      </div>
+      <div class="profil-info">
+          <h2>Brugernavn:</h2> <br><br>
+          <h2>Alder:</h2> <br><br>
+          <h2>Køn:</h2> <br><br>
+          <h2>Beskrivelse:</h2>
+          <input type="text" id="profilbeskrivelse" placeholder="Opret beksrivelse">
+        <!-- Tilføj flere personlige oplysninger efter behov -->
+      </div>
     </div>
-
     <div class="profil_interesser">
        <h2>Mine interesser:</h2>
-       <p> Fodbold</p>
-       <p> Musik</p>
-       <p> Gaming</p>
+       <div class="interesse" style="background-color: #ff6666;">Fotografi</div> 
+       <div class="interesse" style="background-color: #ffcc66;">Rejser</div>
+       <div class="interesse" style="background-color: #66ccff;">Bøger</div>
+       <div class="interesse" style="background-color: #77dd77;">Musik</div>
     </div>
 
 
     <div class="kontakt">
-      <h2>Kontaktinformation</h2>
-      <p>E-mail: bruger@email.com</p>
-      <p>Telefon: 12345678</p>
+      <h2>Kontaktinformation:</h2> <br>
+      <p class="kontaktinfo">E-mail: bruger@email.com</p> <br>
+      <p class="kontaktinfo">Telefon: 12345678</p>
       <!-- Tilføj flere kontaktinformationer efter behov -->
     </div>
 
-    <button class="rediger-knap">Rediger Profil</button>
-    <button class="opret-chauffør-knap" id="opret-chauffør-knap">Opret som Chauffør</button>
-
+    <div class="dummeknapper">
+      <button class="rediger-knap">Rediger Profil</button>
+      <button class="opret-chauffør-knap" id="opret-chauffør-knap">Opret som Chauffør</button>
+    </div>
 
     <div class="chauffør-inputs" style="display: none;">
-      <input type="text" placeholder="Plads i bil (personer og bagage)">
-      <input type="text" placeholder="Billede af bil">
-      <input type="text" placeholder="Nummerplade">
-      <button class="chauffør-godkend" id="chauffør-godkend">Opret som chauffør</button>
-      <button class="annuleroprettelse" id="chauffør-annuler">Annuler</button>
+      <input class="chaufførtekst"type="text" placeholder="Plads i bil">
+      <input class="chaufførtekst"type="text" placeholder="Nummerplade">
+      <input class="chaufførtekst"type="text" placeholder="Beskrivelse af bil">
+      <button class="rediger-knap" id="chauffør-gem">Gem</button>
+      <button class="rediger-knap" id="chauffør-annuler">Annuller</button>
     </div>
   </main>
-  
-  <footer>
+</body>
+
+
+  <footer class="footerprofil">
     <p>&copy; 2024 EventGo.DK</p>
     <p>Kontakt -> email.dk</p>
   </footer>
+<script>
+  document.getElementById('profilbeskrivelse').addEventListener('input', function() {
+    // Opdater inputfeltets højde baseret på dets scrollhøjde
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+  });
+</script>
+
 
   <script src="logout.js"></script>
   <script src="minprofilscript.js"></script>
-</body>
+
 </html>

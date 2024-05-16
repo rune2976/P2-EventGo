@@ -51,7 +51,8 @@ footer {
 }
 
 body{
-  background-image: linear-gradient(rgba(52, 216, 151, 0.8),rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
+  background-image: url(assets/HALKR_KRO_1.png) ;
+  background-size: cover; 
   height: 100vh;
   display: flex; /* Anvender flexbox */
   flex-direction: column; /* Orienterer flex-items i en vertikal kolonne */
@@ -66,10 +67,12 @@ body{
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  border-radius: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 h1{
   font-family: Arial, Helvetica, sans-serif;
@@ -106,7 +109,6 @@ label{
 
 
 input, select {
-  width: 100%;
   padding: 8px;
   margin-top: 8px;
   box-sizing: border-box;
@@ -154,9 +156,7 @@ input, select {
   padding: 20px;  /* Tilføjer padding inden i den store kasse */
   border: 2px solid #ccc;  /* Ramme om hele profilen */
   border-radius: 8px;
-  background-image: url(assets/vejbillede2.jpg);  /* Sætter et baggrundsbillede */
-  background-size: cover;  /* Sørger for at billedet dækker hele kassen */
-  background-position: center;  /* Centrerer billedet i kassen */
+  background-color: #f4f4;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
   width: 60%;  /* Tilpasset bredde */
@@ -180,7 +180,7 @@ input, select {
   padding: 10px;
   border: 2px solid #ddd;  /* Tilføjer en yderligere ramme */
   border-radius: 8px;
-  background-color: #fff;  /* En hvid baggrund */
+  background-color: #fff;;  /* En hvid baggrund */
   margin-top: 10px;
 
 }
@@ -245,7 +245,8 @@ p {
 
 /* Her begynder css for Delegenstande*/
 .Delegenstande {
-  background-image: linear-gradient(rgba(52, 216, 151, 0.8), rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
+  background-image: url(assets/HALKR_KRO_1.png) ;
+  background-size: cover; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +263,7 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 500px;
   text-align: center;
-  background-color: white; /* Added background color for better readability */
+  background-color: #f4f4f4; /* Added background color for better readability */
 }
 
 .checkbox-group {
@@ -300,144 +301,6 @@ p {
 
 /* Her slutter css for delegenstande *//* Basis Styling til hjemmesiden */
 
-header {
-  background: #10784e; /* Eksempel på baggrundsfarve */
-  font-family: sans-serif;
-  padding: 10px 20px; /* Padding rundt om headeren */
-  width: 100%;
-}
-
-nav ul {
-  list-style: none; /* Fjerner punkttegn */
-  padding: 0; /* Nulstiller padding */
-  margin: 0; /* Nulstiller margin */
-  display: flex; /* Anvender flexbox for at arrangere elementerne horisontalt */
-  justify-content: space-between; /* Fordeler elementerne jævnt */
-  padding-left: 350px;
-}
-
-nav li {
-  margin: 0 10px; /* Tilføjer en lille margin mellem hver listeelement */
-}
-
-nav a {
-  text-decoration: none; /* Fjerner understregning af links */
-  color: #333; /* Farve på tekst */
-  font-weight: bold; /* Gør teksten fed */
-  background-color: #6f7a3f; /* Baggrundsfarve for hver linkkasse */
-  padding: 10px 15px; /* Tilføjer padding for at gøre linket større og mere knaplignende */
-  border-radius: 5px; /* Giver kasserne afrundede hjørner */
-  transition: background-color 0.3s; /* Gør farveskift ved hover glattere */
-}
-
-nav a:hover {
-  color: #0056b3; /* Farve på tekst ved hover */
-}
-
-footer {
-  background-color: #10784e;
-  color: white;
-  text-align: center;
-  font-family: sans-serif;
-  font-style: oblique;
-  padding: 30px;
-  margin-top: auto; /* Automatisk margin øverst skubber footer ned */
-  }
-  
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background-image: linear-gradient(rgba(52, 216, 151, 0.8),rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
-  height: 100vh;
-  display: flex; /* Anvender flexbox */
-  flex-direction: column; /* Orienterer flex-items i en vertikal kolonne */
-  justify-content: space-between; /* Fordeler indholdet med mellemrum */
-  font-family: sans-serif;
-}
-
-
-.container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1{
-  font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 30px;
-}
-
-p{
-  text-align: center;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-}
-
-label{
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.button {
-  background-color: #4CAF50; /* Grøn */
-  color: white;
-  padding: 10px 20px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-
-input, select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 8px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.login-btn{
-  border: none;
-  background-color: green;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 30px;
-}
-
-.logout-btn{
-  border: none;
-  background-color: rgb(255, 71, 71);
-  color: #fff;
-  height: 50px;
-  width: 100px;
-  font-size: 20px;
-  border-radius: 5px;
-  margin-top: 30px;
-  cursor: pointer;
-}
-
-
 
 /* UNDER er alt omkring profiler under kørselsplaner */
 .profile-container {
@@ -454,9 +317,7 @@ input, select {
   padding: 20px;  /* Tilføjer padding inden i den store kasse */
   border: 2px solid #ccc;  /* Ramme om hele profilen */
   border-radius: 8px;
-  background-image: url(assets/vejbillede2.jpg);  /* Sætter et baggrundsbillede */
-  background-size: cover;  /* Sørger for at billedet dækker hele kassen */
-  background-position: center;  /* Centrerer billedet i kassen */
+  background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
   width: 60%;  /* Tilpasset bredde */
@@ -478,9 +339,9 @@ input, select {
   display: inline-block;
   text-align: left;
   padding: 10px;
-  border: 2px solid #ddd;  /* Tilføjer en yderligere ramme */
+  border: 2px solid #ccc;  /* Tilføjer en yderligere ramme */
   border-radius: 8px;
-  background-color: #fff;  /* En hvid baggrund */
+  background-color: #f4f4f4;  /* En hvid baggrund */
   margin-top: 10px;
 
 }
@@ -507,10 +368,10 @@ input, select {
 }
 
 .interesse {
-  padding: 5px 10px;
+  border: 1px solid black; 
+  padding: 10px;
   margin: 5px;
   border-radius: 5px;
-  color: white;
   font-size: 0.8em;
 }
 /* Her stopper det med profiler */
@@ -518,20 +379,23 @@ input, select {
 
 /* Her begynder CSS med Opret Profil */
 
+.signup-form{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .signupform  {
+  margin-top: 100px;
   display: flex;
   align-items: center;
   padding: 30px;  /* Tilføjer padding inden i den store kasse */
   border: 2px solid #ccc;
   border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
- 
 background-color: #f4f4f4;
-  background-size: cover;  /* Sørger for at billedet dækker hele kassen */
-  background-position: center;  /* Centrerer billedet i kassen */
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
-  margin-bottom: 20px;
-  width: 40%;  /* Tilpasset bredde */
- margin: auto; /* Tilpasset boksen til midten af skærmen */
+background-position: center;  /* Centrerer billedet i kassen */
+box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+margin-bottom: 30px;
+width: 40%;  /* Tilpasset bredde */
+margin: auto; /* Tilpasset boksen til midten af skærmen */
 justify-content: center; /* Sikre teksten er i midten af boksen */
 text-align: start;
 overflow: auto; /* Sørger for at indholdet kan være på siden og ellers kan man scrolle */
@@ -551,4 +415,129 @@ overflow: auto; /* Sørger for at indholdet kan være på siden og ellers kan ma
 text-align: center;
 }
 
+.header2profil{
+  color: #000000;
+  font-size: 35px;
+  line-height: 2;
+}
 
+/* Her slutter CSS med Opret Profil */
+
+/* Her begynder CSS med Profil */
+
+.profilbody{
+  align-items: center;
+}
+
+.footerprofil{
+  width: 100%;
+}
+
+.Profilmain  {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  padding: 30px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
+  background-color: #f4f4f4;
+  background-position: center;  /* Centrerer billedet i kassen */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  width: 60%;
+}
+
+.profil_interesser {
+  padding: 10px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
+  background-color: #f4f4f4;
+  background-position: center;  /* Centrerer billedet i kassen */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  text-align: center;
+}
+
+.kontakt{
+  padding: 10px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
+  background-color: #f4f4f4;
+  background-position: center;  /* Centrerer billedet i kassen */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.kontaktinfo{
+  padding: 0px;
+  text-align: left;
+}
+
+
+.profil-billede-tekst{
+  display: flex;
+}
+
+.profil-info{
+  padding: 20px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
+  background-color: #f4f4f4;
+  background-position: center;  /* Centrerer billedet i kassen */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  margin-top: 0px;
+  margin-bottom: inline-block;
+  margin-left: 60px;
+  text-align: left;
+  width: 100%;
+}
+
+.profil-info input{
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.profil-billede {
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+
+.rediger-knap{
+  border: none;
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.opret-chauffør-knap{
+  border: none;
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.dummeknapper{
+  text-align: center;
+}
+
+.chaufførtekst{
+  display: flex;
+  text-align: start;
+}

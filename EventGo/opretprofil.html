@@ -21,12 +21,11 @@
       </ul>
     </nav>
   </header>
-
-<h2>Opret gratis profil</h2>
-<div class="signup-form"><div class="signupform"> 
-
+<div class="signup-form">
+  <div class="signupform"> 
 
     <form id="signup-form">
+      <h2 class="header2profil">Opret gratis profil</h2>
       <label for="profile-picture">Vælg profilbillede:</label>
       <input type="file" id="profile-picture" accept="image/*"><br><br>
 
@@ -43,9 +42,6 @@
       <option value="other">Andet</option>
     </select><br><br>
 
-<div class="text-box"></div class="textbox" >
-
-
     <label for="birthdate">Fødselsdato:</label>
     <input type="date" id="birthdate" required><br><br>
 
@@ -61,10 +57,10 @@
     <label for="confirm-password">Gentag adgangskode:</label>
     <input type="password" id="confirm-password" required><br><br>
 
-    <input type="opretprofil" class="opretprofil-btn" value="Opret gratis profil" />
-   </div>
+    <input type="submit" class="opretprofil-btn" value="Opret gratis profil" />
 
-  </form>
+    </form>
+  </div>
 </div>
 
 <script>
@@ -95,6 +91,8 @@
 
     // Nulstil formen
     document.getElementById('signup-form').reset();
+
+    window.location.href = "homepage.html";
   });
 </script>
 
