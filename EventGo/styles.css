@@ -51,7 +51,8 @@ footer {
 }
 
 body{
-  background-image: linear-gradient(rgba(52, 216, 151, 0.8),rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
+  background-image: url(assets/HALKR_KRO_1.png) ;
+  background-size: cover; 
   height: 100vh;
   display: flex; /* Anvender flexbox */
   flex-direction: column; /* Orienterer flex-items i en vertikal kolonne */
@@ -244,7 +245,8 @@ p {
 
 /* Her begynder css for Delegenstande*/
 .Delegenstande {
-  background-image: linear-gradient(rgba(52, 216, 151, 0.8), rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
+  background-image: url(assets/HALKR_KRO_1.png) ;
+  background-size: cover; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,4 +420,29 @@ text-align: center;
   color: #000000;
   font-size: 35px;
   line-height: 2;
+}
+
+/* Her slutter CSS med Opret Profil */
+
+/* Her begynder CSS med Profil */
+
+.profilbody{
+  align-items: center;
+}
+
+.footerprofil{
+  width: 100%;
+}
+
+.Profilmain  {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  padding: 30px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
+  background-color: #f4f4f4;
+  background-position: center;  /* Centrerer billedet i kassen */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  width: 60%;
 }
