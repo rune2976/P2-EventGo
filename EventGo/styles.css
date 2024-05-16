@@ -245,7 +245,7 @@ p {
 
 /* Her begynder css for Delegenstande*/
 .Delegenstande {
-  background-image: linear-gradient(rgba(52, 216, 151, 0.8),rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
+  background-image: linear-gradient(rgba(52, 216, 151, 0.8), rgba(7, 26, 5, 0.8)), url(assets/wp3557588-forest-wallpaper-hd-1080p.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,24 +255,32 @@ p {
   background-color: #f4f4f4;
 }
 
-
 .containerDelegenstande {
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
   text-align: center;
+  background-color: white; /* Added background color for better readability */
+}
+
+.checkbox-group {
+  margin-bottom: 25px;
 }
 
 .checkbox-group label {
-  display: block;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 
 .checkbox-group input[type="checkbox"] {
-  margin-right: 8px;
+  width: auto;
+  margin-top: 0;
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevents the checkbox from shrinking */
 }
 
 .festival-button {
@@ -287,6 +295,8 @@ p {
 .festival-button:hover {
   background-color: #0056b3;
 }
+
+
 
 /* Her slutter css for delegenstande *//* Basis Styling til hjemmesiden */
 
