@@ -7,3 +7,8 @@ document.getElementById('chauffør-annuler').addEventListener('click', function(
   var chaufførInputs = document.querySelector('.chauffør-inputs');
   chaufførInputs.style.display = 'none';
 });
+
+document.getElementById('chauffør-gem').addEventListener('click', function() {
+  var chaufførInputs = document.querySelector('.chauffør-inputs');
+  chaufførInputs.style.display = 'none';
+});
