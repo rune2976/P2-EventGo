@@ -23,61 +23,49 @@
   </header>
 
 <h2>Opret gratis profil</h2>
-<form id="signup-form" class="signup-form">
-  <div class="form-group">
-    <label for="profile-picture">Vælg profilbillede:</label>
-    <input type="file" id="profile-picture" accept="image/*">
-  </div>
+<div class="signup-form"><div class="signupform"> 
 
-  <div class="form-group">
+
+    <form id="signup-form">
+      <label for="profile-picture">Vælg profilbillede:</label>
+      <input type="file" id="profile-picture" accept="image/*"><br><br>
+
     <label for="first-name">Fornavn:</label>
-    <input type="text" id="first-name" required>
-  </div>
+    <input type="text" id="first-name" required><br><br>
 
-  <div class="form-group">
     <label for="last-name">Efternavn:</label>
-    <input type="text" id="last-name" required>
-  </div>
+    <input type="text" id="last-name" required><br><br>
 
-  <div class="form-group">
     <label for="gender">Køn:</label>
     <select id="gender" required>
       <option value="male">Mand</option>
       <option value="female">Kvinde</option>
       <option value="other">Andet</option>
-    </select>
-  </div>
+    </select><br><br>
 
-  <div class="form-group">
+<div class="text-box"></div class="textbox" >
+
+
     <label for="birthdate">Fødselsdato:</label>
-    <input type="date" id="birthdate" required>
-  </div>
+    <input type="date" id="birthdate" required><br><br>
 
-  <div class="form-group">
     <label for="email">E-mail:</label>
-    <input type="email" id="email" required>
-  </div>
+    <input type="email" id="email" required><br><br>
 
-  <div class="form-group">
     <label for="username">Opret brugernavn:</label>
-    <input type="text" id="username" required>
-  </div>
+    <input type="text" id="username" required><br><br>
 
-  <div class="form-group">
     <label for="password">Opret adgangskode:</label>
-    <input type="password" id="password" required>
-  </div>
+    <input type="password" id="password" required><br><br>
 
-  <div class="form-group">
     <label for="confirm-password">Gentag adgangskode:</label>
-    <input type="password" id="confirm-password" required>
-  </div>
+    <input type="password" id="confirm-password" required><br><br>
 
-  <div class="form-group">
-    <input type="submit" class="opretprofil-btn" value="Opret gratis profil">
-  </div>
-</form>
+    <input type="opretprofil" class="opretprofil-btn" value="Opret gratis profil" />
+   </div>
 
+  </form>
+</div>
 
 <script>
   document.getElementById('signup-form').addEventListener('submit', function(event) {
