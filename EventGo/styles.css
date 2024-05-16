@@ -3,8 +3,11 @@
 header {
   background: #10784e; /* Eksempel på baggrundsfarve */
   font-family: sans-serif;
-  padding: 10px 20px; /* Padding rundt om headeren */
+  padding: 0px 10px; /* Padding rundt om headeren */
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -12,22 +15,27 @@ nav ul {
   padding: 0; /* Nulstiller padding */
   margin: 0; /* Nulstiller margin */
   display: flex; /* Anvender flexbox for at arrangere elementerne horisontalt */
-  justify-content: right; /* Fordeler elementerne jævnt */
   padding-left: 350px;
 }
 
+
+.logo{
+  width: 250px;
+  display: left;
+}
+
+
 nav li {
-  margin: 0 10px; /* Tilføjer en lille margin mellem hver listeelement */
+  margin: 10px; /* Tilføjer en lille margin mellem hver listeelement */
 }
 
 nav a {
   text-decoration: none; /* Fjerner understregning af links */
   color: #f8f3f3; /* Farve på tekst */
   font-weight: bold; /* Gør teksten fed */
-  background-color: #14631f; /* Baggrundsfarve for hver linkkasse */
-  padding: 10px 15px; /* Tilføjer padding for at gøre linket større og mere knaplignende */
+  background-color: #119661; /* Baggrundsfarve for hver linkkasse */
+  padding: 10px 25px; /* Tilføjer padding for at gøre linket større og mere knaplignende */
   border-radius: 5px; /* Giver kasserne afrundede hjørner */
-  transition: background-color 0.3s; /* Gør farveskift ved hover glattere */
 }
 
 nav a:hover {
@@ -41,6 +49,7 @@ footer {
   font-family: sans-serif;
   font-style: oblique;
   padding: 20px;
+  width: 100%;
   margin-top: auto; /* Automatisk margin øverst skubber footer ned */
   }
   
@@ -233,7 +242,7 @@ p {
 
 .signup-button {
   padding: 20px 20px;
-  background-color: #007BFF;
+  background-color: #4CAF50;
   color: white;
   text-decoration-thickness: 12;
   border-radius: 5px;
@@ -290,7 +299,7 @@ p {
 
 .festival-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -408,7 +417,7 @@ overflow: auto; /* Sørger for at indholdet kan være på siden og ellers kan ma
 
 .opretprofil-btn{
   border: none;
-  background-color: green;
+  background-color: #4CAF50;
   color: #fff;
   font-size: 20px;
   padding: 10px;
@@ -514,7 +523,7 @@ text-align: center;
 
 .rediger-knap{
   border: none;
-  background-color: green;
+  background-color: #4CAF50;
   color: #fff;
   font-size: 20px;
   padding: 10px;
@@ -526,7 +535,7 @@ text-align: center;
 
 .opret-chauffør-knap{
   border: none;
-  background-color: green;
+  background-color: #4CAF50;
   color: #fff;
   font-size: 20px;
   padding: 10px;
@@ -564,9 +573,76 @@ text-align: center;
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
+/* Glemt kodeord css starter */
+.glemtbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e9ecef;
 }
+
+.glemtkode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.glemtform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.glemtform h4 {
+  margin: 10px 0;
+}
+
+.glemtform input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.glemtform button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.glemtform button:hover {
+  background-color: #0056b3;
+}
+
+.information-text {
+  margin-bottom: 10px;
+}
+
+.glemtform a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.glemtform a:hover {
+  text-decoration: underline;
+}
+
+/* Glemt kodeord css slutter */
