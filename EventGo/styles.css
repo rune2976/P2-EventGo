@@ -511,16 +511,44 @@ input, select {
 .signupform  {
   display: flex;
   align-items: center;
-  padding: 20px;  /* Tilføjer padding inden i den store kasse */
-  border: 2px solid #ccc;  /* Ramme om hele profilen */
-  border-radius: 8px;
-  background-image: url(assets/vejbillede2.jpg);  /* Sætter et baggrundsbillede */
+  padding: 30px;  /* Tilføjer padding inden i den store kasse */
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Tilføjer afrundede hjørner for en mere moderne udseende */
+ 
+background-color: #f4f4f4;
   background-size: cover;  /* Sørger for at billedet dækker hele kassen */
   background-position: center;  /* Centrerer billedet i kassen */
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
-  width: 60%;  /* Tilpasset bredde */
- 
+  width: 40%;  /* Tilpasset bredde */
+ margin: auto; /* Tilpasset boksen til midten af skærmen */
+justify-content: center; /* Sikre teksten er i midten af boksen */
+text-align: start;
+overflow: auto; /* Sørger for at indholdet kan være på siden og ellers kan man scrolle */
 }
 
+
+.form-group {
+  margin-top: 50px;
+  padding-top: 500%;
+  color: #000000;
+
+}
+
+
+
+
+
+
+.opretprofil-btn{
+  border: none;
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+text-align: center;
+}
 
