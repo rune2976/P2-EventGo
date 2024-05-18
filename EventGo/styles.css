@@ -25,6 +25,20 @@ nav ul {
 }
 
 
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 6%; /* 1/8th of the original size */
+  cursor: pointer;
+  transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+.chat-icon:hover {
+    transform: scale(1.1) scaleX(-1); /* Maintain the flip and add hover effect */
+}
+
+
 nav li {
   margin: 10px; /* Tilføjer en lille margin mellem hver listeelement */
 }
