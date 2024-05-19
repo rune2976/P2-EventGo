@@ -1,6 +1,8 @@
 /* Basis Styling til hjemmesiden */
 
 header {
+  display: center;
+  background: #10784e; /* Eksempel på baggrundsfarve */
   background: #0f7049; /* Eksempel på baggrundsfarve */
   font-family: sans-serif;
   padding: 0px 10px; /* Padding rundt om headeren */
